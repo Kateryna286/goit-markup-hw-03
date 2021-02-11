@@ -1,1 +1,133 @@
+html {
+  box-sizing: border-box;
+}
 
+/* *,
+*::before,
+*::after {
+  box-sizing: inherit;
+} */
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.header ul {
+  display: flex;
+}
+
+.header-nav {
+  display: flex;
+}
+
+.header {
+  outline: 1px solid blue;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.hero {
+  margin-bottom: 94px;
+}
+
+.features-list {
+  outline: 1px solid teal;
+  display: flex;
+  flex-wrap: wrap;
+
+  margin-left: -30px;
+  margin-top: -30px;
+  margin-bottom: 94px;
+}
+
+.features-list > .features-list-item {
+  outline: 1px solid tomato;
+
+  flex-basis: calc(100% / 4 - 30px);
+
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
+.issues-list {
+  outline: 1px solid teal;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+  margin-bottom: 94px;
+}
+
+.issues-list > .issues-item {
+  outline: 1px solid tomato;
+
+  flex-basis: calc(100% / 3 - 30px);
+
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
+/* Паддинг-залипуха. Подумать */
+
+.team-list {
+  outline: 1px solid teal;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+  padding-bottom: 94px;
+}
+
+.team-list > .team-list-item {
+  outline: 1px solid tomato;
+
+  flex-basis: calc(100% / 4 - 30px);
+
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
+.team-card-thumb {
+  background-color: #fff;
+
+  /* box-shadow: 10px 10px 8px 2px rgba(0, 0, 0, 0.3); */
+}
+
+/* Отступ под картинкой. Подумать, как лучше сделать */
+.team-list-item img {
+  margin-bottom: 30px;
+}
+
+.team-item-title {
+  text-align: center;
+}
+
+/* Паддинг-залипуха. Подумать */
+.team-item-text {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+/* Паддинг-залипуха. Подумать */
+
+.team-title {
+  margin-bottom: 50px;
+  padding-top: 94px;
+}
