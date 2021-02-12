@@ -61,9 +61,9 @@ html {
   margin-left: 50px;
 }
 
-.header-nav .header {
+/* .header-nav .header {
   outline: 1px solid blue;
-}
+} */
 
 h1,
 h2,
@@ -75,17 +75,36 @@ p {
   margin: 0;
 }
 
-img {
+/* img {
   display: block;
   max-width: 100%;
-}
+} */
 
 .hero {
   margin-bottom: 94px;
+  width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  min-height: 600px;
+}
+
+.hero-title {
+  display: block;
+  padding-top: 200px;
+  text-transform: uppercase;
+}
+
+.hero-link {
+  /* display: block; */
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 32px;
+  padding-right: 32px;
+  border-radius: 4px;
 }
 
 .features-list {
-  outline: 1px solid teal;
+  /* outline: 1px solid teal; */
   display: flex;
   flex-wrap: wrap;
 
@@ -95,7 +114,7 @@ img {
 }
 
 .features-list > .features-list-item {
-  outline: 1px solid tomato;
+  /* outline: 1px solid tomato; */
 
   flex-basis: calc(100% / 4 - 30px);
 
@@ -103,8 +122,12 @@ img {
   margin-top: 30px;
 }
 
+.features-item-title {
+  margin-bottom: 10px;
+}
+
 .issues-list {
-  outline: 1px solid teal;
+  /* outline: 1px solid teal; */
   display: flex;
   flex-wrap: wrap;
   margin-left: -30px;
@@ -113,7 +136,7 @@ img {
 }
 
 .issues-list > .issues-item {
-  outline: 1px solid tomato;
+  /* outline: 1px solid tomato; */
 
   flex-basis: calc(100% / 3 - 30px);
 
@@ -121,10 +144,20 @@ img {
   margin-top: 30px;
 }
 
+.issues-title {
+  margin-bottom: 50px;
+}
+
+.team {
+  width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* Паддинг-залипуха. Подумать */
 
 .team-list {
-  outline: 1px solid teal;
+  /* outline: 1px solid teal; */
   display: flex;
   flex-wrap: wrap;
   margin-left: -30px;
@@ -133,7 +166,7 @@ img {
 }
 
 .team-list > .team-list-item {
-  outline: 1px solid tomato;
+  /* outline: 1px solid tomato; */
 
   flex-basis: calc(100% / 4 - 30px);
 
@@ -167,4 +200,95 @@ img {
 .team-title {
   margin-bottom: 50px;
   padding-top: 94px;
+}
+
+.footer {
+  width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  min-height: 252px;
+}
+
+.footer-logo {
+  display: block;
+  padding-top: 50px;
+  margin-bottom: 20px;
+}
+
+.footer-addres-map {
+  margin-bottom: 9px;
+}
+
+.footer-email {
+  display: block;
+  margin-bottom: 9px;
+}
+
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+  margin-bottom: 94px;
+}
+
+.portfolio-list-item {
+  flex-basis: calc(100% / 3 - 30px);
+
+  margin-left: 30px;
+  margin-top: 30px;
+
+  border: 1px solid #eeeeee;
+}
+
+.portfolio-button {
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-right: 22px;
+  padding-left: 22px;
+  border: none;
+  border-radius: 4px;
+}
+
+.portfolio-button-list {
+  display: flex;
+  justify-content: center;
+}
+
+.button-item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.buttons {
+  margin-top: 94px;
+  margin-bottom: 50px;
+}
+
+.portfolio-item-header {
+  margin-top: 20px;
+  margin-bottom: 4px;
+  margin-left: 24px;
+  margin-right: 24px;
+}
+
+.portfolio-item-text {
+  margin-bottom: 20px;
+  margin-left: 24px;
+  margin-right: 24px;
+}
+
+/* Скрытый заголовок. Код подсмотрен у А.Репеты */
+
+.hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }

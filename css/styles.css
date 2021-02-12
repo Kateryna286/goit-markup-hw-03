@@ -135,7 +135,7 @@ body {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
-  color: var(--title-text-color);
+  color: var(--text-color);
 }
 
 .issues-title {
