@@ -1,12 +1,49 @@
-html {
-  box-sizing: border-box;
+:root {
+  --main-background-color: #fff;
+  --additional-background-color: #f5f4fa;
+  --title-text-color: #212121;
+  --text-color: #757575;
+  --accent-color: #2196f3;
+  --logo-color: #000;
+  --hero-footer-color: #2f303a;
+  --mailtel-logo-footer: rgba(255, 255, 255, 0.6);
 }
 
-/* *,
-*::before,
-*::after {
-  box-sizing: inherit;
-} */
+/* Общая стилизация */
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Фоновые цвета */
+
+.header {
+  background-color: var(--main-background-color);
+}
+
+.hero,
+.footer {
+  background-color: var(--hero-footer-color);
+}
+
+.team {
+  background-color: var(--additional-background-color);
+}
+
+/* Шрифты */
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Общие стили для контейнера */
 
 .container {
   margin-left: auto;
@@ -15,55 +52,6 @@ html {
   padding-left: 15px;
   padding-right: 15px;
 }
-
-.main-nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.logo {
-  margin-right: 93px;
-  padding-top: 25px;
-  padding-bottom: 25px;
-}
-
-.header-list {
-  display: flex;
-}
-
-.header-nav {
-  display: flex;
-  align-items: center;
-}
-
-.contacts {
-  display: flex;
-}
-
-.header-list .item {
-  display: block;
-}
-
-/* .header-list li:not(:last-child) {
-  margin-right: 50px;
-} */
-
-/* .header-list li:last-child {
-  margin-right: 0;
-} */
-
-.header-list .item + .item {
-  margin-left: 50px;
-}
-
-.contacts .item + .item {
-  margin-left: 50px;
-}
-
-/* .header-nav .header {
-  outline: 1px solid blue;
-} */
 
 h1,
 h2,
@@ -75,131 +63,15 @@ p {
   margin: 0;
 }
 
-/* img {
+img {
   display: block;
   max-width: 100%;
-} */
-
-.hero {
-  margin-bottom: 94px;
-  width: 1600px;
-  margin-left: auto;
-  margin-right: auto;
-  min-height: 600px;
-}
-
-.hero-title {
-  display: block;
-  padding-top: 200px;
-  text-transform: uppercase;
-}
-
-.hero-link {
-  /* display: block; */
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 32px;
-  padding-right: 32px;
-  border-radius: 4px;
-}
-
-.features-list {
-  /* outline: 1px solid teal; */
-  display: flex;
-  flex-wrap: wrap;
-
-  margin-left: -30px;
-  margin-top: -30px;
-  margin-bottom: 94px;
-}
-
-.features-list > .features-list-item {
-  /* outline: 1px solid tomato; */
-
-  flex-basis: calc(100% / 4 - 30px);
-
-  margin-left: 30px;
-  margin-top: 30px;
-}
-
-.features-item-title {
-  margin-bottom: 10px;
-}
-
-.issues-list {
-  /* outline: 1px solid teal; */
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: -30px;
-  margin-top: -30px;
-  margin-bottom: 94px;
-}
-
-.issues-list > .issues-item {
-  /* outline: 1px solid tomato; */
-
-  flex-basis: calc(100% / 3 - 30px);
-
-  margin-left: 30px;
-  margin-top: 30px;
-}
-
-.issues-title {
-  margin-bottom: 50px;
 }
 
 .team {
   width: 1600px;
   margin-left: auto;
   margin-right: auto;
-}
-
-/* Паддинг-залипуха. Подумать */
-
-.team-list {
-  /* outline: 1px solid teal; */
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: -30px;
-  margin-top: -30px;
-  padding-bottom: 94px;
-}
-
-.team-list > .team-list-item {
-  /* outline: 1px solid tomato; */
-
-  flex-basis: calc(100% / 4 - 30px);
-
-  margin-left: 30px;
-  margin-top: 30px;
-}
-
-.team-card-thumb {
-  background-color: #fff;
-
-  /* box-shadow: 10px 10px 8px 2px rgba(0, 0, 0, 0.3); */
-}
-
-/* Отступ под картинкой. Подумать, как лучше сделать */
-.team-list-item img {
-  margin-bottom: 30px;
-}
-
-.team-item-title {
-  text-align: center;
-}
-
-/* Паддинг-залипуха. Подумать */
-.team-item-text {
-  text-align: center;
-  padding-bottom: 30px;
-}
-
-/* Паддинг-залипуха. Подумать */
-
-.team-title {
-  margin-bottom: 50px;
-  padding-top: 94px;
 }
 
 .footer {
@@ -209,20 +81,7 @@ p {
   min-height: 252px;
 }
 
-.footer-logo {
-  display: block;
-  padding-top: 50px;
-  margin-bottom: 20px;
-}
-
-.footer-addres-map {
-  margin-bottom: 9px;
-}
-
-.footer-email {
-  display: block;
-  margin-bottom: 9px;
-}
+/* тут я закончила */
 
 .portfolio-list {
   display: flex;
@@ -238,16 +97,7 @@ p {
   margin-left: 30px;
   margin-top: 30px;
 
-  border: 1px solid #eeeeee;
-}
-
-.portfolio-button {
-  padding-top: 6px;
-  padding-bottom: 6px;
-  padding-right: 22px;
-  padding-left: 22px;
-  border: none;
-  border-radius: 4px;
+  background-color: #fff;
 }
 
 .portfolio-button-list {
