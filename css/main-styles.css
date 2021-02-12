@@ -16,15 +16,52 @@ html {
   padding-right: 15px;
 }
 
-.header ul {
+.main-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  margin-right: 93px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.header-list {
   display: flex;
 }
 
 .header-nav {
   display: flex;
+  align-items: center;
 }
 
-.header {
+.contacts {
+  display: flex;
+}
+
+.header-list .item {
+  display: block;
+}
+
+/* .header-list li:not(:last-child) {
+  margin-right: 50px;
+} */
+
+/* .header-list li:last-child {
+  margin-right: 0;
+} */
+
+.header-list .item + .item {
+  margin-left: 50px;
+}
+
+.contacts .item + .item {
+  margin-left: 50px;
+}
+
+.header-nav .header {
   outline: 1px solid blue;
 }
 
