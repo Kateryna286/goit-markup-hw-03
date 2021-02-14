@@ -301,7 +301,7 @@
   text-decoration: none;
 }
 
-.footer-addres-map {
+.footer-address-link {
   margin-bottom: 9px;
   font-style: normal;
   font-weight: 400;
@@ -312,6 +312,7 @@
 
 .footer-email,
 .footer-tel {
+  font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
@@ -323,19 +324,32 @@
   margin-bottom: 9px;
 }
 
+.footer-address-link {
+  display: block;
+  margin-bottom: 9px;
+}
+
 /* Портфолио */
 
+.buttons {
+  margin-top: 94px;
+  margin-bottom: 50px;
+}
+
 .portfolio-button {
-  font-family: inherit;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.6;
-  color: var(--title-text-color);
-  background-color: var(--additional-background-color);
   padding-top: 6px;
   padding-bottom: 6px;
   padding-right: 22px;
   padding-left: 22px;
+
+  color: var(--title-text-color);
+  background-color: var(--additional-background-color);
+
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+
   border: none;
   border-radius: 4px;
 }
@@ -350,16 +364,74 @@
   background-color: var(--additional-background-color);
 }
 
+.portfolio-button-list {
+  display: flex;
+  justify-content: center;
+}
+
+.button-item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+
+  margin-left: -30px;
+  margin-top: -30px;
+  margin-bottom: 94px;
+}
+
+.portfolio-list-item {
+  flex-basis: calc(100% / 3 - 30px);
+
+  margin-left: 30px;
+  margin-top: 30px;
+
+  background-color: #fff;
+}
+
+.card-content {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 24px;
+  padding-right: 24px;
+
+  border-bottom: 1px solid #eee;
+  border-left: 1px solid #eee;
+  border-right: 1px solid #eee;
+}
+
 .portfolio-item-header {
+  margin-bottom: 4px;
+
+  color: var(--title-text-color);
+
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
-  color: var(--title-text-color);
 }
 
 .portfolio-item-text {
+  color: var(--text-color);
+
   font-weight: 400;
   font-size: 16px;
   line-height: 1.87;
-  color: var(--text-color);
+}
+
+/* Скрытый заголовок. Код подсмотрен у А.Репеты */
+
+.hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
