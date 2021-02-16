@@ -123,8 +123,12 @@
 }
 
 .hero-title {
-  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
   padding-top: 200px;
+
+  width: 696px;
 
   color: #ffffff;
 
